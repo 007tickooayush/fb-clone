@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "fbclone-47706": {
+      "hosting": {
+        "FB": [
+          "fbclone-47706"
+        ]
+      }
+    }
+  }
+}
