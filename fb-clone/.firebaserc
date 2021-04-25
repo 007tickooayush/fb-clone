@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "fbclone-47706": {
+      "hosting": {
+        "fb-clone": [
+          "fbclone-47706"
+        ]
+      }
+    }
+  }
+}
