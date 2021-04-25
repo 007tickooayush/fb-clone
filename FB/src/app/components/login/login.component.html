@@ -1,1 +1,35 @@
-<p>login works!</p>
+<div class="login-container">
+  <header class="login__header">
+    <div class="login__header__left">
+      <img src="assets/fb_logo_login.png" alt="logo">
+      <h2>Facebook helps you connect and share with the people in your life.</h2>
+    </div>
+
+    <div class="login__header__right">
+      <mat-card class="login__header__right__card">
+        <mat-card-content class="login__header__right__card_content">
+          <form #form="ngForm" class="login-form" (ngSubmit)="login(form)">
+            <input type="text" name="email" ngModel placeholder="Enter your Email address" required>
+            <input type="text" name="password" ngModel placeholder="Enter your password" required>
+
+            <button type="submit"
+                    class="login-button"
+                    [disabled]="form.invalid || form.pending">
+              Sign in
+            </button>
+          </form>
+          <a href="#"> forgotten account?</a>
+          <hr>
+          <button class="create-account" (click)="openRegister()">Create Account</button>
+        </mat-card-content>
+      </mat-card>
+
+      <p class="tagline"><strong>Create a page</strong> for celebrity, brand or business. </p>
+    </div>
+
+  </header>
+  <footer class="login__footer">
+    <img src="assets/footer.png" alt="footer">
+  </footer>
+
+</div>
